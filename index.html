@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Yasir - Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Muhammad Yasir</h1>
+            <h2 class="subtitle">Professional Resume</h2>
+        </header>
+
+        <form id="resumeForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" value="Muhammad Yasir" required>
+            
+            <label for="title">Job Title:</label>
+            <input type="text" id="title" value="Senior Accountant & Aspiring Developer" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="myasir0089@gmail.com" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" value="0301-0218405" required>
+            
+            <label for="summary">Professional Summary:</label>
+            <textarea id="summary" required>Experienced Senior Accountant transitioning into software development. Passionate about technology, finance, and problem-solving.</textarea>
+            
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" required>
+- Senior Accountant at Team Rhino Marketing Consultants FZE (2024-Present)
+- Accountant at Transworld Pakistan (2023-2024)
+- Senior Accountant at Artistic Garment Industry (2017-2023)
+            </textarea>
+            
+            <label for="education">Education:</label>
+            <textarea id="education" required>
+- B.Com from Karachi University
+- Completed three semesters of MBA
+            </textarea>
+            
+            <label for="skills">Skills:</label>
+            <textarea id="skills" required>
+- Accounting & Finance
+- QuickBooks & Oracle (EBS)
+- Next.js & JavaScript Development
+            </textarea>
+            
+            <label for="projects">Projects:</label>
+            <textarea id="projects" required>
+- Marketplace Builder Hackathon 2025
+- Next.js Design Jam 2024
+            </textarea>
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+        
+        <div id="resumeDisplay" class="resume"></div>
+        <button id="downloadPDF">Download PDF</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
